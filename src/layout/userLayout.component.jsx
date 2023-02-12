@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer/footer.component";
 import Header from "../components/Header/header.component";
 
 const UserLayout = () => {
@@ -7,6 +8,7 @@ const UserLayout = () => {
     <Fragment>
       <Header />
       <Outlet />
+      <Footer/>
     </Fragment>
   );
 };

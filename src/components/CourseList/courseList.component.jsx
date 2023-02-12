@@ -18,7 +18,7 @@ function CourseList() {
     >
       {courseList.map((course) => {
         return (
-          <Grid item xs={12} sm={12} md={4} lg={3} key={course.id}>
+          <Grid item xs={12} sm={6} md={3} lg={3} key={course.id}>
             <CourseItem course={course} />
           </Grid>
         );
