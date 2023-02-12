@@ -1,51 +1,84 @@
+import { Avatar, Grid, Typography } from "@mui/material";
 import {
-  Grid,
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
-  CardMedia,
-} from "@mui/material";
-
-import { styled } from "@mui/material";
+  CourseCard,
+  CourseImage,
+  CourseInfo,
+  CourseActions,
+  UserInfo,
+} from "./courseItemStyle";
 
 import course1 from "../../assets/course1.jpg";
 
-// const StyledCard = styled(Card)`
-//   height: 280px;
-//   width: 300px;
-//   min-height: 260px;
-//   max-height: 300px;
-// `;
-
-const StyledCard = styled(Card)(({ theme }) => ({
-  height: 280,
-}));
-
-const StyledCardMedia = styled(CardMedia)``;
-
-const StyledCardContent = styled(CardContent)``;
-const StyledCardActions = styled(CardActions)``;
-
 function CourseItem({ course }) {
   return (
-    <StyledCard
-      sx={{
-        width: {
-          xs: 320,
-          sm: 300,
-          md: 300,
-          lg: 300,
-          xl: 300,
-        },
-      }}
-    >
-      <StyledCardMedia component="img" sx={{ height: 140 }} image={course1} />
-      <StyledCardContent>
-        <Typography>{course.name}</Typography>
-      </StyledCardContent>
-      <StyledCardActions></StyledCardActions>
-    </StyledCard>
+    <CourseCard>
+      <CourseImage component="img" sx={{ height: 140 }} image={course1} />
+      <CourseInfo>
+        <Typography
+          variant="subtitle2"
+          sx={{
+            fontWeight: 500,
+            fontSize: "14px",
+            lineHeight: "20px",
+            color: "#6941C6",
+          }}
+        >
+          {course.topic}
+        </Typography>
+        <Typography
+          variant="subtitle2"
+          sx={{
+            fontWeight: 500,
+            fontSize: "24px",
+            lineHeight: "32px",
+            marginTop: "12px",
+          }}
+        >
+          {course.name}
+        </Typography>
+        <Typography
+          variant="subtitle2"
+          sx={{
+            fontWeight: 400,
+            fontSize: "16px",
+            lineHeight: "24px",
+            color: "#475467",
+            marginTop: "8px",
+          }}
+        >
+          {course.description}
+        </Typography>
+      </CourseInfo>
+      <CourseActions>
+        <Avatar
+          srcSet="../../assets/1.jpg"
+          src="../../assets/1.jpg"
+          sx={{ width: "40px", height: "40px" }}
+        />
+        <UserInfo>
+          <Typography
+            sx={{
+              fontWeight: 500,
+              fontSize: "14px",
+              lineHeight: "20px",
+              color: "#101828",
+            }}
+          >
+            {course.author}
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: 400,
+              fontSize: "14px",
+              lineHeight: "20px",
+              color: "#475467",
+            }}
+          >
+            20 Jan 2022
+          </Typography>
+        </UserInfo>
+      </CourseActions>
+    </CourseCard>
   );
 }
 

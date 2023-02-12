@@ -2,15 +2,16 @@
 import { Container } from "@mui/material";
 import CourseList from "../../components/CourseList/courseList.component";
 import { styled } from "@mui/system";
+import Hero from "../../components/Hero/hero.component";
 
 const StyledContainer = styled("div")`
-  padding: 30px;
+  background-color: #f9f5ff;
 `;
 
 function Home() {
   return (
     <StyledContainer>
-      {/* <Carousel /> */}
+      <Hero />
       <CourseList />
     </StyledContainer>
   );

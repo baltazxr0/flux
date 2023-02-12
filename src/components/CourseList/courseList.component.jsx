@@ -1,54 +1,24 @@
+import { useState } from "react";
 import { Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import CourseItem from "../CourseItem/courseItem.component";
-
-const courseList = [
-  {
-    id: 1,
-    name: "Javascript",
-  },
-  {
-    id: 2,
-    name: "React",
-  },
-  {
-    id: 3,
-    name: "C++",
-  },
-  {
-    id: 4,
-    name: "Django",
-  },
-  {
-    id: 5,
-    name: "Python",
-  },
-  {
-    id: 6,
-    name: "Java",
-  },
-  {
-    id: 7,
-    name: "Html + Css",
-  },
-  {
-    id: 8,
-    name: "Kotlin",
-  },
-];
+import { courseList } from "../../data/coursesData";
+import { useEffect } from "react";
 
 function CourseList() {
   return (
     <Grid
       container
-      spacing={"30px"}
+      sx={{ padding: "0px 16px" }}
+      columnGap="32px"
+      rowGap="48px"
       direction="row"
       justifyContent="center"
       alignItems="center"
     >
       {courseList.map((course) => {
         return (
-          <Grid item key={course.id} xs="auto">
+          <Grid item xs={12} sm={12} md={4} lg={3} key={course.id}>
             <CourseItem course={course} />
           </Grid>
         );

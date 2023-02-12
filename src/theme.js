@@ -1,12 +1,20 @@
 import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
+  typography: {
+    button: {
+      textTransform: "none",
+    },
+  },
   palette: {
     primary: {
-      main: "#3F8AE0",
+      main: "#7F56D9",
     },
     secondary: {
       main: "#326eb3",
+    },
+    buttons: {
+      main: "#7F56D9",
     },
   },
   //custom theme variables
