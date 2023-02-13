@@ -11,6 +11,7 @@ export const courseList = [
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers?",
     image: { avatar1 },
+    price: 10.99,
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const courseList = [
     name: "Migrating to Linear 101",
     description:
       "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    price: 10.99,
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const courseList = [
     name: "Building your API Stack",
     description:
       "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+    price: 10.99,
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ export const courseList = [
     name: "Bill Walsh leadership lessons",
     description:
       "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+    price: 10.99,
   },
   {
     id: 5,
@@ -42,7 +46,8 @@ export const courseList = [
     author: "Demi WIlkinson",
     name: "PM mental models",
     description:
-      "Mental models are simple expressions of complex processes or relationships.",
+      "Mental models are simple expressions of complex processes or relationships. Learn from the best in the industry.",
+    price: 10.99,
   },
   {
     id: 6,
@@ -51,18 +56,25 @@ export const courseList = [
     name: "What is Wireframing?",
     description:
       "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+    price: 10.99,
   },
   {
     id: 7,
     topic: "Programming",
     author: "Author",
-    name: "The Complete SQL Bootcamp: Go from Zero to Hero",
+    name: "How collaboration makes us better designers",
+    description:
+      "Collaboration can make our teams stronger, and our individual designs better.",
+    price: 10.99,
   },
   {
     id: 8,
     topic: "Programming",
     author: "Author",
     name: "Angular - The Complete Guide (2023 Edition)",
+    description:
+      "JavaScript frameworks make development easy with extensive features.",
+    price: 10.99,
   },
   {
     id: 9,
@@ -71,5 +83,6 @@ export const courseList = [
     name: "Ux review presentation",
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    price: 10.99,
   },
 ];

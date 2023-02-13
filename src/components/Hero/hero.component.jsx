@@ -1,5 +1,6 @@
-import { Typography } from "@mui/material";
-import { Container } from "./heroStyle";
+import { Search } from "@mui/icons-material";
+import { InputAdornment, InputBase, Typography } from "@mui/material";
+import { Container, SearchInput } from "./heroStyle";
 
 function Hero() {
   return (
@@ -27,6 +28,14 @@ function Hero() {
       >
         The latest courses, technologies, and resources.
       </Typography>
+      <SearchInput
+        placeholder="Search"
+        startAdornment={
+          <InputAdornment position="start">
+            <Search sx={{ color: "#667085" }} />
+          </InputAdornment>
+        }
+      />
     </Container>
   );
 }

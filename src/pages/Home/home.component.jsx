@@ -6,6 +6,7 @@ import Hero from "../../components/Hero/hero.component";
 
 const StyledContainer = styled("div")`
   background-color: #f9f5ff;
+  padding-bottom: 20px;
 `;
 
 function Home() {
