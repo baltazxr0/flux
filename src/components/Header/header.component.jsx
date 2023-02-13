@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Avatar,
-  Typography,
-  IconButton,
-  Menu,
-  MenuItem,
-  Button,
-} from "@mui/material";
+import { Avatar, Typography, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box } from "@mui/system";
 import {
@@ -19,7 +12,6 @@ import {
 } from "./headerStyle";
 import { useContext } from "react";
 import { UserContext } from "../../context/user.context";
-import { Link } from "react-router-dom";
 
 const navLinks = ["Home", "Products", "About Us", "Become a Seller"];
 

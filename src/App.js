@@ -15,7 +15,7 @@ function App() {
       </Route>
       <Route path="/auth" element={<AuthLayout />}>
         <Route path="signin" element={<SignIn />} />
-        <Route path="signin" element={<SignUp />} />
+        <Route path="signup" element={<SignUp />} />
       </Route>
     </Routes>
   );

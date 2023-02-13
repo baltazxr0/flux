@@ -1,7 +1,5 @@
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
 import styled from "@emotion/styled";
-import { Button, FormControlLabel, InputBase, Typography } from "@mui/material";
+import { Box, Button, InputBase, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Container = styled("div")({
@@ -36,7 +34,7 @@ const CompanyName = styled(Typography)({
   align: "center",
 });
 
-const LoginText = styled(Typography)({
+const SignupText = styled(Typography)({
   fontWeight: 600,
   fontSize: "30px",
   lineHeight: "38px",
@@ -80,46 +78,25 @@ const PasswordField = styled(InputBase)({
   height: "44px",
 });
 
-const Email = styled(Typography)({
-  fontWeight: 500,
-  fontSize: "14px",
-  lineHeight: "20px",
-  color: "#344054",
-  marginBottom: "6px",
-});
-
-const Password = styled(Typography)({
-  fontWeight: 500,
-  fontSize: "14px",
-  lineHeight: "20px",
-  color: "#344054",
-  marginBottom: "6px",
-});
-
-const CheckboxContainer = styled(Box)({
+const OrContainer = styled(Box)({
   display: "flex",
   width: "100%",
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
+  justifyContent: "center",
   marginTop: "24px",
 });
 
-const RememberCheckbox = styled(FormControlLabel)({
+const OrText = styled(Typography)(({}) => ({
   fontWeight: 500,
   fontSize: "14px",
   lineHeight: "20px",
-  color: "#344054",
-});
+  textAlign: "center",
+  color: "#475467",
+}));
 
-const ForgotPassword = styled(Typography)({
-  fontWeight: 600,
-  fontSize: "14px",
-  lineHeight: "20px",
-  color: "#6941C6",
-});
-
-const SignupLink = styled(Link)({
+const LoginLink = styled(Link)({
   fontWeight: 600,
   fontSize: "14px",
   lineHeight: "20px",
@@ -150,7 +127,7 @@ const LoginButton = styled(Button)({
   color: "#FFFFFF",
 });
 
-const GoogleLoginButton = styled(Button)({
+const GoogleSignupButton = styled(Button)({
   width: "360px",
   height: "44px",
   border: "1px solid #D0D5DD",
@@ -165,20 +142,17 @@ export {
   LoginBox,
   TextBox,
   CompanyName,
-  LoginText,
+  SignupText,
   WelcomeText,
   EmailContainer,
   PasswordContainer,
   EmailField,
   PasswordField,
-  Email,
-  Password,
-  CheckboxContainer,
-  RememberCheckbox,
-  ForgotPassword,
-  SignupLink,
+  OrContainer,
+  OrText,
+  LoginLink,
   BottomBox,
   ButtonsContainer,
   LoginButton,
-  GoogleLoginButton,
+  GoogleSignupButton,
 };
