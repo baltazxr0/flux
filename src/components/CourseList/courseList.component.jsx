@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import CourseItem from "../CourseItem/courseItem.component";
-import { courseList } from "../../data/coursesData";
+// import { courseList } from "../../data/coursesData";
 import { useEffect } from "react";
 
-function CourseList() {
+function CourseList({ courses }) {
   return (
     <Grid
       container
@@ -16,7 +16,7 @@ function CourseList() {
       justifyContent="center"
       alignItems="center"
     >
-      {courseList.map((course) => {
+      {courses.map((course) => {
         return (
           <Grid item xs={12} sm={6} md={3} lg={3} key={course.id}>
             <CourseItem course={course} />

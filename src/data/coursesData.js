@@ -20,7 +20,7 @@ export const courseList = [
     name: "Migrating to Linear 101",
     description:
       "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
-    price: 10.99,
+    price: 5.99,
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const courseList = [
     name: "Building your API Stack",
     description:
       "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
-    price: 10.99,
+    price: 7.99,
   },
   {
     id: 4,

@@ -2,7 +2,7 @@ import { Search } from "@mui/icons-material";
 import { InputAdornment, InputBase, Typography } from "@mui/material";
 import { Container, SearchInput } from "./heroStyle";
 
-function Hero() {
+function Hero({ onChangeHandler }) {
   return (
     <Container>
       <Typography
@@ -14,7 +14,7 @@ function Hero() {
           textAlign: "center",
         }}
       >
-        Courses and mentoring
+        Start your learning journey!
       </Typography>
       <Typography
         sx={{
@@ -29,6 +29,7 @@ function Hero() {
         The latest courses, technologies, and resources.
       </Typography>
       <SearchInput
+        onChange={onChangeHandler}
         placeholder="Search"
         startAdornment={
           <InputAdornment position="start">
